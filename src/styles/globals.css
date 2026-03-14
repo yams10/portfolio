@@ -1,0 +1,40 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", system-ui, sans-serif;
+}
+
+.section-pad {
+  @apply px-6 sm:px-10 lg:px-20;
+}
+
+.glass {
+  @apply bg-white/70 dark:bg-base-800/60 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-glass;
+}
+
+.tag {
+  @apply rounded-full border border-base-200/60 dark:border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-brand-400 via-brand-500 to-accent-400 bg-clip-text text-transparent;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
