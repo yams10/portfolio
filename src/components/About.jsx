@@ -1,4 +1,4 @@
-﻿import profileImage from "../assets/profile.svg";
+﻿import aboutEngineerImage from "../assets/aboutengineer.png";
 import SectionReveal from "./SectionReveal.jsx";
 
 const About = () => {
@@ -42,14 +42,11 @@ const About = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="relative">
-            <div className="absolute -inset-6 rounded-[40px] bg-gradient-to-r from-brand-400/40 to-accent-400/40 blur-2xl" />
-            <img
-              src={profileImage}
-              alt="Profile"
-              className="relative z-10 w-72 rounded-[32px] shadow-glass"
-            />
-          </div>
+          <img
+            src={aboutEngineerImage}
+            alt="About engineer"
+            className="w-full max-w-sm rounded-3xl shadow-glass"
+          />
         </div>
       </div>
     </SectionReveal>
